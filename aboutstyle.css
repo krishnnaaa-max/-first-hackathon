@@ -1,0 +1,305 @@
+/* ==========================================================
+   SIMPLE BEGINNER-FRIENDLY CSS - ABOUT PAGE
+   ========================================================== */
+
+/* Page Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7; /* Light Cream Background */
+    color: #2b1e1a;            /* Dark Espresso Text */
+}
+
+/* ------------------------------------
+   1. LEFT SIDEBAR NAVIGATION
+   ------------------------------------ */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2b1e1a; /* Dark Coffee */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 15px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    color: #d4af37; /* Metallic Gold */
+    font-size: 22px;
+}
+
+.logo p {
+    color: #e2d7ce;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.nav-links {
+    margin: 30px 0;
+}
+
+.nav-links a {
+    display: block;
+    color: #f5efe6;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #3d2b24; /* Dark Mocha */
+    color: #d4af37;
+}
+
+.sidebar-info {
+    background-color: #3d2b24;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.sidebar-info strong {
+    color: #d4af37;
+}
+
+.call-button {
+    display: block;
+    background-color: #d4af37;
+    color: #2b1e1a;
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ------------------------------------
+   2. MAIN CONTENT AREA
+   ------------------------------------ */
+.main-content {
+    margin-left: 250px;
+}
+
+.header-banner {
+    background-color: #3d2b24;
+    color: #ffffff;
+    padding: 60px 40px;
+    border-bottom: 4px solid #d4af37;
+}
+
+.header-banner h1 {
+    font-size: 32px;
+    color: #f5efe6;
+    margin-bottom: 10px;
+}
+
+.header-banner p {
+    color: #e2d7ce;
+    font-size: 16px;
+}
+
+.section {
+    padding: 50px 40px;
+}
+
+.section h2 {
+    color: #2b1e1a;
+    font-size: 26px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.beige-bg {
+    background-color: #f5efe6; /* Warm Beige Background */
+}
+
+/* ------------------------------------
+   3. ABOUT STORY & GRID
+   ------------------------------------ */
+.about-grid {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #4a342d;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e6dcce;
+}
+
+/* ------------------------------------
+   4. FEATURES CARDS
+   ------------------------------------ */
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #e6dcce;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 10px);
+}
+
+.feature-card .icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    color: #2b1e1a;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #6e5f5b;
+    line-height: 1.5;
+}
+
+/* ------------------------------------
+   5. TEAM SECTION
+   ------------------------------------ */
+.team-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.team-card {
+    background-color: #ffffff;
+    border: 1px solid #e6dcce;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+.team-card .avatar {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    color: #2b1e1a;
+    margin-bottom: 4px;
+}
+
+.team-card .role {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #6e5f5b;
+}
+
+/* ------------------------------------
+   6. CALL TO ACTION & FOOTER
+   ------------------------------------ */
+.cta-banner {
+    background-color: #2b1e1a;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.cta-banner h2 {
+    color: #d4af37;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.cta-banner p {
+    margin-bottom: 20px;
+    color: #e2d7ce;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.btn-gold {
+    background-color: #d4af37;
+    color: #2b1e1a;
+}
+
+.btn-green {
+    background-color: #25d366;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #1e1512;
+    color: #d4af37;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* Responsive Mobile Layout */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .about-grid, 
+    .team-grid {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,320 @@
+/* ==========================================================
+   SIMPLE BEGINNER-FRIENDLY CSS - AJMER PAGE WITH MAP
+   ========================================================== */
+
+/* Page Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7; /* Light Cream Background */
+    color: #2b1e1a;            /* Dark Espresso Text */
+}
+
+/* ------------------------------------
+   1. LEFT SIDEBAR NAVIGATION
+   ------------------------------------ */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2b1e1a; /* Dark Coffee */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 15px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    color: #d4af37; /* Metallic Gold */
+    font-size: 22px;
+}
+
+.logo p {
+    color: #e2d7ce;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.nav-links {
+    margin: 30px 0;
+}
+
+.nav-links a {
+    display: block;
+    color: #f5efe6;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #3d2b24; /* Dark Mocha */
+    color: #d4af37;
+}
+
+.sidebar-info {
+    background-color: #3d2b24;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.sidebar-info strong {
+    color: #d4af37;
+}
+
+.call-button {
+    display: block;
+    background-color: #d4af37;
+    color: #2b1e1a;
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ------------------------------------
+   2. MAIN CONTENT AREA
+   ------------------------------------ */
+.main-content {
+    margin-left: 250px;
+}
+
+.header-banner {
+    background-color: #3d2b24;
+    color: #ffffff;
+    padding: 60px 40px;
+    border-bottom: 4px solid #d4af37;
+}
+
+.header-banner h1 {
+    font-size: 30px;
+    color: #f5efe6;
+    margin-bottom: 10px;
+}
+
+.header-banner p {
+    color: #e2d7ce;
+    font-size: 15px;
+}
+
+.section {
+    padding: 50px 40px;
+}
+
+.section h2 {
+    color: #2b1e1a;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section-subtitle {
+    color: #6e5f5b;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.beige-bg {
+    background-color: #f5efe6; /* Warm Beige Background */
+}
+
+/* ------------------------------------
+   3. INTRO SECTION
+   ------------------------------------ */
+.intro-grid {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #4a342d;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e6dcce;
+}
+
+/* ------------------------------------
+   4. GOOGLE MAP SECTION STYLING
+   ------------------------------------ */
+.map-container {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.address-box {
+    background-color: #ffffff;
+    border: 1px solid #e6dcce;
+    border-left: 5px solid #d4af37;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.address-box h3 {
+    color: #2b1e1a;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.address-box p {
+    color: #4a342d;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.map-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.map-iframe {
+    flex: 1.5;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e6dcce;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ------------------------------------
+   5. LOCATION CARDS GRID
+   ------------------------------------ */
+.location-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.location-card {
+    background-color: #ffffff;
+    border: 1px solid #e6dcce;
+    border-left: 5px solid #d4af37;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 10px);
+}
+
+.loc-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.location-card h3 {
+    color: #2b1e1a;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.location-card p {
+    font-size: 14px;
+    color: #6e5f5b;
+    line-height: 1.5;
+}
+
+/* ------------------------------------
+   6. EMERGENCY BOX & FOOTER
+   ------------------------------------ */
+.emergency-box {
+    background-color: #3d2b24;
+    color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.emergency-box h2 {
+    color: #d4af37;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.emergency-box p {
+    color: #e2d7ce;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-gold {
+    background-color: #d4af37;
+    color: #2b1e1a;
+}
+
+.btn-green {
+    background-color: #25d366;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #1e1512;
+    color: #d4af37;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .intro-grid,
+    .map-container {
+        flex-direction: column;
+    }
+
+    .location-card {
+        width: 100%;
+    }
+}

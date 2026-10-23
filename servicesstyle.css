@@ -1,0 +1,254 @@
+/* ==========================================================
+   SIMPLE BEGINNER-FRIENDLY CSS - SERVICES PAGE
+   ========================================================== */
+
+/* Page Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7; /* Light Cream Background */
+    color: #2b1e1a;            /* Dark Espresso Text */
+}
+
+/* ------------------------------------
+   1. LEFT SIDEBAR NAVIGATION
+   ------------------------------------ */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2b1e1a; /* Dark Coffee */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 15px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    color: #d4af37; /* Metallic Gold */
+    font-size: 22px;
+}
+
+.logo p {
+    color: #e2d7ce;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.nav-links {
+    margin: 30px 0;
+}
+
+.nav-links a {
+    display: block;
+    color: #f5efe6;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #3d2b24; /* Dark Mocha */
+    color: #d4af37;
+}
+
+.sidebar-info {
+    background-color: #3d2b24;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.sidebar-info strong {
+    color: #d4af37;
+}
+
+.call-button {
+    display: block;
+    background-color: #d4af37;
+    color: #2b1e1a;
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ------------------------------------
+   2. MAIN CONTENT AREA
+   ------------------------------------ */
+.main-content {
+    margin-left: 250px;
+}
+
+.header-banner {
+    background-color: #3d2b24;
+    color: #ffffff;
+    padding: 60px 40px;
+    border-bottom: 4px solid #d4af37;
+}
+
+.header-banner h1 {
+    font-size: 32px;
+    color: #f5efe6;
+    margin-bottom: 10px;
+}
+
+.header-banner p {
+    color: #e2d7ce;
+    font-size: 16px;
+}
+
+.section {
+    padding: 50px 40px;
+}
+
+.beige-bg {
+    background-color: #f5efe6; /* Warm Beige Background */
+}
+
+/* ------------------------------------
+   3. PRICE LIST TABLE STYLING
+   ------------------------------------ */
+.category-header h2 {
+    color: #2b1e1a;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.category-header p {
+    color: #6e5f5b;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.price-table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e6dcce;
+    overflow: hidden;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid #f5efe6;
+}
+
+.price-row:last-child {
+    border-bottom: none;
+}
+
+.service-name strong {
+    color: #2b1e1a;
+    font-size: 16px;
+}
+
+.service-name p {
+    color: #6e5f5b;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.service-price {
+    background-color: #2b1e1a;
+    color: #d4af37;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 90px;
+    text-align: center;
+}
+
+/* ------------------------------------
+   4. EMERGENCY BREAKDOWN CARD
+   ------------------------------------ */
+.pickup-card {
+    background-color: #3d2b24;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 6px solid #d4af37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.pickup-text h2 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.pickup-text p {
+    color: #e2d7ce;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.btn-gold {
+    background-color: #d4af37;
+    color: #2b1e1a;
+}
+
+.btn-gold:hover {
+    background-color: #c49f27;
+}
+
+.footer {
+    background-color: #1e1512;
+    color: #d4af37;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* Responsive Mobile Layout */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .price-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .pickup-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}

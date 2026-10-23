@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Lucky Satya Auto Service Center</title>
+    <!-- Linking external CSS -->
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Lucky Satya</h2>
+            <p>Auto Service Center</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="hexa.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services & Prices</a>
+            <a href="villages.html">Served in Ajmer</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </div>
+
+        <div class="sidebar-info">
+            <p><strong>Shop Helpline:</strong></p>
+            <p>8:00 AM – 8:00 PM</p>
+            <a href="tel:9876543210" class="call-button">Call Now</a>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+
+        <!-- Page Header Banner -->
+        <div class="header-banner">
+            <h1>Contact & Service Booking</h1>
+            <p>Have questions or need vehicle repair? Reach out directly or book an appointment online.</p>
+        </div>
+
+        <!-- Quick Contact Info Cards (3 Columns) -->
+        <div class="section">
+            <div class="contact-cards-grid">
+                
+                <!-- Card 1: Phone -->
+                <div class="info-card">
+                    <div class="card-icon">📞</div>
+                    <h3>Call or WhatsApp</h3>`
+                    <p><strong>Phone:</strong> +91 6378289328</p>
+                    <p><strong>Owners:</strong> lonish </p>
+                    <a href="https://wa.me/6378289328" class="card-btn whatsapp-bg">Chat on WhatsApp</a>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">📞</div>
+                    <h3>Call or WhatsApp</h3>`
+                    <p><strong>Phone:</strong> +91 9660278088</p>
+                    <p><strong>Owners:</strong> Krishna </p>
+                    <a href="https://wa.me/9660278088" class="card-btn whatsapp-bg">Chat on WhatsApp</a>
+                </div>
+
+                <!-- Card 2: Shop Address -->
+                <div class="info-card">
+                    <div class="card-icon">📍</div>
+                    <h3>Visit Our Garage</h3>
+                    <p>Shop No. 1, 805, Basant Vihar,</p>
+                    <p>Dhola Bhata Rd, Ajmer 305007</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Shop+no.+1+805+Basant+Vihar+Dhola+Bhata+Rd+Dhola+Bhata+Ajmer+Rajasthan+305007" target="_blank" class="card-btn gold-bg">Get Map Directions</a>
+                </div>
+
+                <!-- Card 3: Opening Hours -->
+                <div class="info-card">
+                    <div class="card-icon">⏰</div>
+                    <h3>Working Hours</h3>
+                    <p><strong>Monday - Sunday:</strong></p>
+                    <p>8:00 AM – 8:00 PM</p>
+                    <p class="tag-open">Open 7 Days a Week</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Interactive Booking Form & Map Section -->
+        <div class="section beige-bg">
+            <div class="form-and-map-container">
+
+                <!-- Service Request Form -->
+                <div class="booking-form-box">
+                    <h2>Book Service / Request Breakdown</h2>
+                    <p class="form-subtitle">Fill out this quick form to book a repair slot or roadside help:</p>
+
+                    <form action="#" method="post" onsubmit="alert('Thank you! Your service request has been sent. Satyam/Lucky will call you shortly.'); return false;">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone / WhatsApp Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit mobile number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle Type:</label>
+                            <select id="vehicle" name="vehicle" required>
+                                <option value="">-- Select Your Vehicle --</option>
+                                <option value="Bike / Scooter">Bike or Scooter</option>
+                                <option value="Car">Car</option>
+                                <option value="Auto Rickshaw">Auto Rickshaw</option>
+                                <option value="Tractor / Commercial">Tractor or Commercial</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed:</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Select Service Needed --</option>
+                                <option value="General Servicing">Full Servicing & Washing</option>
+                                <option value="Oil Change">Engine Oil & Filter Change</option>
+                                <option value="Breakdown Pickup">Roadside Breakdown Pickup</option>
+                                <option value="Puncture / Battery">Puncture or Battery Jump-Start</option>
+                                <option value="Other Repairs">Other Mechanical Work</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Address / Location Details:</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Enter your village/area name or problem description..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Service Request</button>
+                    </form>
+                </div>
+
+                <!-- Google Map Box -->
+                <div class="map-box">
+                    <h2>Shop Location</h2>
+                    <div class="iframe-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps?q=Shop+no.+1+805+Basant+Vihar+Dhola+Bhata+Rd+Dhola+Bhata+Ajmer+Rajasthan+305007&output=embed" 
+                            width="100%" 
+                            height="420" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 Lucky Satya Auto Service Center. All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+/* ==========================================================
+   SIMPLE BEGINNER-FRIENDLY CSS - CONTACT PAGE
+   ========================================================== */
+
+/* Page Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7; /* Light Cream Background */
+    color: #2b1e1a;            /* Dark Espresso Text */
+}
+
+/* ------------------------------------
+   1. LEFT SIDEBAR NAVIGATION
+   ------------------------------------ */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2b1e1a; /* Dark Coffee */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 15px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    color: #d4af37; /* Metallic Gold */
+    font-size: 22px;
+}
+
+.logo p {
+    color: #e2d7ce;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.nav-links {
+    margin: 30px 0;
+}
+
+.nav-links a {
+    display: block;
+    color: #f5efe6;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #3d2b24; /* Dark Mocha */
+    color: #d4af37;
+}
+
+.sidebar-info {
+    background-color: #3d2b24;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.sidebar-info strong {
+    color: #d4af37;
+}
+
+.call-button {
+    display: block;
+    background-color: #d4af37;
+    color: #2b1e1a;
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ------------------------------------
+   2. MAIN CONTENT AREA
+   ------------------------------------ */
+.main-content {
+    margin-left: 250px;
+}
+
+.header-banner {
+    background-color: #3d2b24;
+    color: #ffffff;
+    padding: 60px 40px;
+    border-bottom: 4px solid #d4af37;
+}
+
+.header-banner h1 {
+    font-size: 30px;
+    color: #f5efe6;
+    margin-bottom: 10px;
+}
+
+.header-banner p {
+    color: #e2d7ce;
+    font-size: 15px;
+}
+
+.section {
+    padding: 50px 40px;
+}
+
+.beige-bg {
+    background-color: #f5efe6; /* Soft Beige Background */
+}
+
+/* ------------------------------------
+   3. CONTACT INFO CARDS GRID
+   ------------------------------------ */
+.contact-cards-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border: 1px solid #e6dcce;
+    border-top: 5px solid #d4af37;
+    padding: 25px 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    color: #2b1e1a;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #6e5f5b;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.tag-open {
+    color: #25d366;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.whatsapp-bg {
+    background-color: #25d366;
+    color: #ffffff;
+}
+
+.gold-bg {
+    background-color: #d4af37;
+    color: #2b1e1a;
+}
+
+/* ------------------------------------
+   4. BOOKING FORM & MAP FLEXBOX
+   ------------------------------------ */
+.form-and-map-container {
+    display: flex;
+    gap: 30px;
+}
+
+.booking-form-box {
+    background-color: #ffffff;
+    border: 1px solid #e6dcce;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1.2;
+}
+
+.booking-form-box h2 {
+    color: #2b1e1a;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    color: #6e5f5b;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: #2b1e1a;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fdfbf7;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #d4af37;
+    color: #2b1e1a;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #c49f27;
+}
+
+/* Map Box */
+.map-box {
+    flex: 1;
+}
+
+.map-box h2 {
+    color: #2b1e1a;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.iframe-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e6dcce;
+}
+
+.footer {
+    background-color: #1e1512;
+    color: #d4af37;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* Mobile Responsive Layout */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .contact-cards-grid,
+    .form-and-map-container {
+        flex-direction: column;
+    }
+}
